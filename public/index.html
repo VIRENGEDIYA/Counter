@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>SCALETECH - Coding Excerise</title>
+  </head>
+
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <section class="section">
+      <h1 class="title">Scaletech </h1>
+      <h2 class="subtitle">React + Javascript Interview Exercise</h2>
+      <p>
+        <strong>Instructions:</strong> If you do not know React. You can implement the same functionality requested in instructions below using Angular/Vue etc as well. You are free to ignore this project structure and use your own to achieve the goal.
+      </p>
+      <p>
+        <strong>Instructions:</strong> Modify this project as per
+        the instructions below. You should complete this exercise within 24
+        hours and email a link to your final solution to the interviewer/HR.
+      </p>
+      <p>
+        There are 2 components in this application: <strong>Counter</strong> and
+        <strong>App</strong>. The steps below will take you through modifying
+        and adding components to change functionality and implementation.
+      </p>
+      <ol class="instructions">
+        <li>
+          Update the Counter component to take <code>onIncrement</code> and
+          <code>onDecrement</code> callbacks as props and ensure they update the
+          counter's values independently. Each callback should take a single,
+          integer value as a parameter which is the amount to increment the
+          counter's existing value by.
+        </li>
+        <li>
+          Move the global <code>data</code> array to the component state for the
+          <code>App</code> component.
+        </li>
+        <li>
+          Render a fourth <code>Counter</code> component and ensure it's value
+          is updated independently from the others.
+        </li>
+        <li>
+          Create a <code>Total</code> component, which should display below the
+          <code>Counter</code> components and always display the running total
+          of all the <code>Counter</code> values.
+        </li>
+        <li>
+          Make a copy of the <code>Counter</code> component, saving the original
+          so your instructor can view it later. Then do the following :
+          <ol>
+            <li>
+              remove the <code>onIncrement</code> and
+              <code>onDecrement</code> props from the (new)
+              <code>Counter</code> component
+            </li>
+            <li>
+              add a single <code>onChange</code> callback prop that takes a
+              single integer parameter &mdash; the new value for the counter.
+            </li>
+            <li>
+              Ensure all <code>Counter</code> components still update and
+              function independently after this change.
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </section>
+    <section class="section">
+      <div id="root"></div>
+    </section>
+  </body>
+</html>
